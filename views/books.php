@@ -2,7 +2,12 @@
 <?php ob_start();?>
 
 
-
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Chercher</button>
+  </form>
+</nav>
 <h1 style="text-align:center;">Liste des livres</h1>
 <div class="container">
   <div class="row">
@@ -23,7 +28,7 @@
           </div>
 
           <div class="card-footer">
-            <p class="card-text"><a href="<?php echo $book['link']; ?>" class="btn btn-info" style="display: block;margin-left: auto;margin-right: auto">Description</a></p>
+            <p class="card-text"><a href="?action=book&id=<?php echo $book['id']; ?>" class="btn btn-info" style="display: block;margin-left: auto;margin-right: auto">Description</a></p>
             <a href="http://www.google.fr" target="_blank"class="btn btn-primary" style="display: block;margin-left: auto;margin-right: auto">Ajouter au panier</a>
           </div>
         </div>
