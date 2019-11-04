@@ -24,7 +24,7 @@
 
           <div class="card-footer">
             <p class="card-text"><a href="<?php echo $book['link']; ?>" class="btn btn-info" style="display: block;margin-left: auto;margin-right: auto">Description</a></p>
-            <a href="" class="btn btn-primary" style="display: block;margin-left: auto;margin-right: auto">Ajouter au panier</a>
+            <a href="http://www.google.fr" target="_blank"class="btn btn-primary" style="display: block;margin-left: auto;margin-right: auto">Ajouter au panier</a>
           </div>
         </div>
       </div>
