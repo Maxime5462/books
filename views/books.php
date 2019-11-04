@@ -17,6 +17,9 @@
           <div class="card-body" >
             <h5 class="card-title" style="color:blue;font-weight:bold;text-align:center;"><?php echo $book['title']; ?></h5>
             <p class="card-text" style="text-align:center;">(Auteur) <?php echo $book['author']; ?></p>
+            <p class="card-text" style="text-align:center;">(Pays) <?php echo $book['country']; ?></p>
+            <p class="card-text" style="text-align:center;">(Année) <?php echo $book['year']; ?></p>
+            <p class="card-text" style="text-align:center;">(Langue) <?php echo $book['language']; ?></p>
           </div>
 
           <div class="card-footer">
