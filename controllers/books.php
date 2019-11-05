@@ -5,6 +5,11 @@ function listBooks()
 {
   $books = getBooks();
 
+  echo '<pre>';
+  var_dump($books);
+  echo'<pre>';
+  die;
+
   require('views/books.php');
 }
 
