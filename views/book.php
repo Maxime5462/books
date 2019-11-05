@@ -13,7 +13,7 @@
 
     <div class="col-md-3">
 
-      <img src="<?php echo $book['imageLink'];?>" alt="image" style="height:295px;">
+      <img src="<?php echo $book['image'];?>" alt="image" style="height:295px;">
     </div>
 
     <div class="col-md-9">
