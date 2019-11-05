@@ -28,7 +28,7 @@
         <tbody>
           <tr>
             <th scope="row">Auteur :</th>
-            <td><?php echo $book['author'];?></td>
+            <td><?php echo $book['author']?$book['author']:"Inconnu";?></td>
 
           </tr>
           <tr>

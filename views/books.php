@@ -21,7 +21,7 @@
           <img src=<?php echo $book['image']; ?> class="card-img-top" alt="image" style="width:10rem;height:18rem;display: block;margin-left: auto;margin-right: auto">
           <div class="card-body" >
             <h5 class="card-title" style="color:blue;font-weight:bold;text-align:center;"><?php echo $book['title']; ?></h5>
-            <p class="card-text" style="text-align:center;">(Auteur) <?php echo $book['author']; ?></p>
+            <p class="card-text" style="text-align:center;">(Auteur) <?php echo $book['author']?$book['author']:"Inconnu"; ?></p>
             <p class="card-text" style="text-align:center;">(Pays) <?php echo $book['country']; ?></p>
             <p class="card-text" style="text-align:center;">(Année) <?php echo $book['year']; ?></p>
             <p class="card-text" style="text-align:center;">(Langue) <?php echo $book['language']; ?></p>
