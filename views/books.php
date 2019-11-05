@@ -18,7 +18,7 @@
 
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
         <div class="card h-100">
-          <img src=<?php echo $book['image']; ?> class="card-img-top" alt="image" style="width:10rem;height:18rem;display: block;margin-left: auto;margin-right: auto">
+          <img src=<?php echo $book['image']?$book['image']:"public/images/books/book.jpg"; ?> class="card-img-top" alt="image" style="width:10rem;height:18rem;display: block;margin-left: auto;margin-right: auto">
           <div class="card-body" >
             <h5 class="card-title" style="color:blue;font-weight:bold;text-align:center;"><?php echo $book['title']; ?></h5>
             <p class="card-text" style="text-align:center;">(Auteur) <?php echo $book['author']?$book['author']:"Inconnu"; ?></p>
