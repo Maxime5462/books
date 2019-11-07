@@ -29,11 +29,12 @@ function getBooks()
     LIMIT :offset,:limit
     ');
 
-    $stmt->bindParam(':offset',$offset);
-    $stmt->bindParam(':limit',$limit);
+    $stmt->bindParam(':offset',$offset,PDO::PARAM_INT);
+    $stmt->bindParam(':limit',$limit,PDO::PARAM_INT);
 
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    require('views/books.php');
 
   }
 

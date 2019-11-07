@@ -1,5 +1,5 @@
 <?php
-
+echo crypt("cool");
 if (!isset($_GET['action'])) {
   require('controllers/home.php');
   showHome();
@@ -23,3 +23,4 @@ if (!isset($_GET['action'])) {
       require('views/404.php');
   }
 }
+?>
