@@ -3,6 +3,10 @@
 session_start();
 $db=new PDO('mysql:host=localhost;dbname=books','root');
 
+if(isset($_SESSION['id'])) {
+  session_destroy();
+}
+
 
 var_dump($_POST);
 
